@@ -1,0 +1,46 @@
+.flex-big-container{
+    width: 80%;
+    margin-left: 21%;
+    display: -ms-flexbox;
+    display: flex;
+    flex: 1 1 100%;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+.flex-big-container > div {
+    background-color: #f3f3f3;
+    /* width: 49%; */
+    flex-basis: 93%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .big-card-image {
+    width: 30vmax;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-top: 9vmax;
+}.header-nav-region{
+    width: 100%;
+    font-size: 1.4vmax;
+}
+button{
+    width: 6vmax;
+    background: #C82B1D;
+    border: none;
+    border-radius: 20px;
+    height: 1.8vmax;
+    margin-left: 1vmax;
+    
+}
+.span-inner-button{
+
+}
+.month{
+    margin-left: 32%;
+}
+.pure-table{
+
+}

@@ -1,0 +1,89 @@
+.flex-four-container{
+    width: 100%;
+    margin-left: 10%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1 50%;
+    flex: 1 1;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+.flex-four-container > div {
+    background-color: #f3f3f3;
+    /* width: 49%; */
+    flex-basis: 50%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .flex-container{
+    width: 100%;
+    margin-left: 10%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1 50%;
+    flex: 1 1;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+.flex-container > div {
+    background-color: #f3f3f3;
+    /* width: 49%; */
+    flex-basis: 50%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .main-flex-container{
+      margin:0vmax;
+  }
+  .Chart{
+      width: 100%;
+  }
+  .card-big-1{
+    width: inherit;
+    height: 33.5vmax;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  .card-1{
+    width: inherit;
+    height: 16vmax;
+    border-bottom: 3px solid red;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  .card-2{
+    width: inherit;
+    height: 16vmax;
+    border-bottom: 3px solid #00ff72;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  .card-3{
+    width: inherit;
+    height: 16vmax;
+    border-bottom: 3px solid #00f3ff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  .card-4{
+    width: inherit;
+    height: 16vmax;
+    border-bottom: 3px solid #ff00e0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  .sub-header{
+    margin-left: -33%;
+    margin-top: -18%;
+    font-size: .9vmax;
+  }
+  .img-desc{
+    width: 16vmax;
+    height:6vmax;
+  }
+  .head-header{
+    margin-left: -49%;
+    font-size: 2vmax;
+    font-weight:bold;
+  }

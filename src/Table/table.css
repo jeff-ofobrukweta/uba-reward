@@ -1,0 +1,21 @@
+.table-main,.td,.th{
+    text-align:left;
+}
+.table-main{
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+    width: 93%;
+    margin: 0 auto;
+    margin-bottom: 0%;
+}
+th,td{
+    padding: 16px;
+    color: #565656cc;
+}
+.card-table{
+    background:#ffffff;
+    box-shadow: 0 1px 1px rgba(0,0,10,0),0 1px 1px rgba(0,0,0,0.14);
+}
+.table{
+    margin-left: 7%;
+}

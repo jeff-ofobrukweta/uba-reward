@@ -8,6 +8,7 @@ class Form extends Component {
       <div className="Form">
         <div className="parent-flex-container">
             <div className="form-main-container">
+    <div className="image-container">
                <div className="card-filter">
                         <div className="flex-container-row-header">
                             <h2 className="signin-header">Sign In</h2>
@@ -34,6 +35,7 @@ class Form extends Component {
                             </button>
                         </div>
                </div>
+        </div>
             </div>
         </div>
       </div>
