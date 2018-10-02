@@ -1,30 +1,38 @@
 import React, { Component } from 'react';
 import Profile from '../img/profile_pic.jpg';
-import Chart from '../Chart/chart.js';
-import Bigchart from '../Bigchart/bigchart';
 import Desktop from '../img/desktop.png';
 import Userman from '../img/userman.png';
 import Reporting from '../img/reporting.png';
 import Systems from '../img/systems.png';
 import Content from '../img/content_management.png';
-import Downsmall from '../img/down.png';
-import Table from '../Table/table';
-import Bell from '../img/bell.png';
 import Rightdropdown from '../img/right.png';
-import './Rewardporter.css';
+import Downsmall from '../img/down.png';
+import Bell from '../img/bell.png';
+import Table from '../Table/Table2';
+import './redemption.css';
 
-class Reward extends Component {
-  constructor(props){
-    super(props);
-    this.state ={
-      toogleData:'true'
+class Redemption extends Component {
+    constructor(props){
+        super(props);
+        this.state ={
+          toogleData:'true'
+        }
+      }
+      handleToogledata=()=>{
+         this.setState(prevState3 => ({
+          toogleData: !prevState3.toogleData
+      }));
+      }
+      render() {
+        const {toogleData} = this.state;
+        const datetoogleArray = [];
+        if(toogleData==true){
+          datetoogleArray.push('no-display');
+        }else
+        {
+          datetoogleArray.push('');
+        }
     }
-  }
-  handleToogledata=()=>{
-     this.setState(prevState3 => ({
-      toogleData: !prevState3.toogleData
-  }));
-  }
   render() {
     const {toogleData} = this.state;
     const datetoogleArray = [];
@@ -101,7 +109,7 @@ class Reward extends Component {
             <div className="flex-item-2">
               <div className="sub-navbar-main-nav">
                 <div className="sub-header-section-A">
-                  <div><b style={{fontSize:'19px'}}>Dashboard</b></div>
+                  <div><b style={{fontSize:'18px'}}>Registered custormers</b></div>
                   <div className="parent-circular-icon-toogle-wrapper" onClick={this.handleToogledata}>
                   <div className="drop-down-menu" id={datetoogleArray}>
                     <div className="drop-down-content">
@@ -137,35 +145,22 @@ class Reward extends Component {
                   </div>
                   <div className="input-toogle-scaler">
                     <div className="circular-icon-toogle">
-                      <img src={Downsmall} alt="down-arrow" className="down-arrow"/>
+                        <img src={Downsmall} alt="down-arrow" className="down-arrow"/>
                     </div>
                       <input type="text" className="input-toogler-form"/>
                   </div>
                   </div>
                 </div>
                 <div className="sub-header-section-B">
-                  {/* <div className="sub-header-button-wrapper">
-                    <button className="notshow">New Admin User</button>
-                  </div> */}
-                  <div className="search-list">
+                  <div className="sub-header-button-wrapper">
+                    {/* <button>New Admin User</button> */}
+                  </div>
+                  <div>
                         <input type="text" className="sub-nav-header-search-input" placeholder="Search"/>
-                        <ul className="list-search">
-                          <li>summary</li>
-                          <li>summary</li>
-                          <li>summary</li>
-                        </ul>
                   </div>
                 </div>
               </div>
-              <div class="wrapper">
-                  <div class="one">
-                      <Chart/>
-                  </div>
-                  <div class="two">
-                    <Bigchart/>
-                  </div>
-              </div>
-             {/* <Table/> */}
+             <Table/>
             </div>
         </div>
       </div>
@@ -173,4 +168,4 @@ class Reward extends Component {
   }
 }
 
-export default Reward;
+export default Redemption;

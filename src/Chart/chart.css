@@ -1,6 +1,7 @@
 .flex-four-container{
     width: 100%;
     margin-left: 10%;
+    margin-top: .5vmax;
     display: -ms-flexbox;
     display: flex;
     -ms-flex: 1 1 50%;
@@ -46,6 +47,7 @@
   }
   .card-big-1{
     width: inherit;
+    margin-top: .5vmax;
     height: 33.5vmax;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   }
@@ -83,7 +85,7 @@
     height:6vmax;
   }
   .head-header{
-    margin-left: -49%;
+    margin-right: 20%;
     font-size: 2vmax;
-    font-weight:bold;
+    font-weight: bold;
   }

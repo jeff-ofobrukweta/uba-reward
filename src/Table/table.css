@@ -1,14 +1,15 @@
 .table-main,.td,.th{
     text-align:left;
+    
 }
 .table-main{
     border-collapse: separate;
     border-spacing: 0px 5px;
-    width: 93%;
-    margin: 0 auto;
+    margin: 0px 4%;
     margin-bottom: 0%;
+    width: 125%;
 }
-th,td{
+th,.td-main{
     padding: 16px;
     color: #565656cc;
 }

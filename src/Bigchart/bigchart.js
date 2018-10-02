@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Bigimage from '../img/bg.jpg';
+import Bigimage from '../img/biggraph.png';
 import './bigchart.css';
 
 class Bigchart extends Component {
@@ -11,11 +11,17 @@ class Bigchart extends Component {
             <div>
                      <div className="card-big-1">
                      <div className="header-nav-region">
-                        <small className="summary">Summary</small>
-                        <small className="month">Month<small className="span-inner-button"><button>submit</button></small></small>
+                        <small className="summary"><b>Summary</b></small>
+                        <small className="month"><b>Month</b><small className="span-inner-button"><button className="header-bigcard-button">All Time</button></small></small>
                      </div>
                      <section>
                            <small className="head-header">
+                           <div className="flex-main-first">
+                            <div className="flex-main-first-item1">
+                                
+                            </div>
+                            <div className="flex-main-first-item1"></div>
+                          </div>
                            </small>
                        </section>
                         <img src={Bigimage} alt="big-card-image" className="big-card-image"/>

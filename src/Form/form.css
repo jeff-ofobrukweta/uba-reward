@@ -7,12 +7,12 @@
 }
 .card-filter {
     width: 343px;
-    height: 450px;
+    height: 467px;
     background: #ffffff;
     margin: 0 auto;
     position: absolute;
     left: 40%;
-    top: 18%;
+    top: 7vmax;
     border-radius: 5px;
     -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -21,9 +21,10 @@
 input{
     margin: 4% 10%;
     outline: none;
-    width: 80%;
-    height: 40px;
+    width: 75%;
+    height: 25px;
     border: 1px solid #ccc;
+    padding: 2%;
 }
 .button-1{
     display:flex;
@@ -37,10 +38,15 @@ input{
 }
 .inner-login-text-in-button{
     width: auto;
-    margin-right: 10em;
+    margin-right: 11.5em;
+    margin-top: 11px;
+    margin-left: 5px;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 16px;
     color: white;
+}
+.inner-login-text-in-button img{
+    margin-top: -6px;
 }
 .inner-login-text-in-button-2-icon{
     width: 0%;
@@ -50,10 +56,11 @@ input{
     color: #C82B1D;
 }
 .inner-login-text-in-button-2-long{
-    margin-right: 0em;
+    margin-right: 1em;
     font-weight: bolder;
     font-size: 13.4px;
     color: #C82B1D;
+    margin-top: 10px;
 }
 .button-2{
     display:flex;
@@ -101,6 +108,7 @@ input{
     flex-direction: row;
     flex:1 1 100%;
     margin-bottom: 2%;
+    margin-top: 7%;
 }
 .image-container{
     position: fixed;

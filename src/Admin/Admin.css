@@ -1,0 +1,15 @@
+.down-arrow{
+    width:inherit !important;
+}
+.rightdowndrop{
+    position: relative;
+    top: 7px;
+    left: 5.6vmax;
+    width: 1vmax;
+}
+.rightdowndrop-cm{
+    position: relative;
+    top: 5px;
+    left: .6vmax;
+    width: 1vmax;
+}

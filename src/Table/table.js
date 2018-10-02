@@ -8,76 +8,68 @@ class Table extends Component {
       <div className="table">
         <table className="table-main">
             <tr>
-                <th className="th">ID</th>
-                <th className="th">Firstname</th>
-                <th className="th">Lastname</th>
-                <th className="th">Email</th>
-                <th className="th">Phone</th>
-                <th className="th">Joined</th>
+                <th className="th"><small>Email</small></th>
+                <th className="th"><small>Role</small></th>
+                <th className="th"><small>Current Sign In At</small></th>
+                <th className="th"><small>Last Sign In At</small></th>
+                <th className="th"><small>Status</small></th>
                 <th className="th"></th>
             </tr>
             <tr className="card-table">
-            <td className="td">10</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td"><b>...</b></td>
+            <td className="td-main">iswtester@yahoo.com</td>
+            <td className="td-main">Super Admin</td>
+            <td className="td-main">April 26,2018 15:18</td>
+            <td className="td-main">April 26,2018 15:17</td>
+            <td className="td-main">Active</td>
+            <td className="td-main"><b>...</b></td>
             </tr>
             <tr className="card-table">
-            <td className="td">10</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td"><b>...</b></td>
+            <td className="td-main">iswtester@yahoo.com</td>
+            <td className="td-main">Super Admin</td>
+            <td className="td-main">April 26,2018 15:18</td>
+            <td className="td-main">April 26,2018 15:17</td>
+            <td className="td-main">Active</td>
+            <td className="td-main"><b>...</b></td>
             </tr>
             <tr className="card-table">
-            <td className="td">10</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td"><b>...</b></td>
+            <td className="td-main">iswtester@yahoo.com</td>
+            <td className="td-main">Super Admin</td>
+            <td className="td-main">April 26,2018 15:18</td>
+            <td className="td-main">April 26,2018 15:17</td>
+            <td className="td-main">Active</td>
+            <td className="td-main"><b>...</b></td>
             </tr>
             <tr className="card-table">
-            <td className="td">10</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td"><b>...</b></td>
+            <td className="td-main">iswtester@yahoo.com</td>
+            <td className="td-main">Super Admin</td>
+            <td className="td-main">April 26,2018 15:18</td>
+            <td className="td-main">April 26,2018 15:17</td>
+            <td className="td-main">Active</td>
+            <td className="td-main"><b>...</b></td>
             </tr>
             <tr className="card-table">
-            <td className="td">10</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td"><b>...</b></td>
+            <td className="td-main">iswtester@yahoo.com</td>
+            <td className="td-main">Super Admin</td>
+            <td className="td-main">April 26,2018 15:18</td>
+            <td className="td-main">April 26,2018 15:17</td>
+            <td className="td-main">Active</td>
+            <td className="td-main"><b>...</b></td>
             </tr>
             <tr className="card-table">
-            <td className="td">10</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td"><b>...</b></td>
+            <td className="td-main">iswtester@yahoo.com</td>
+            <td className="td-main">Super Admin</td>
+            <td className="td-main">April 26,2018 15:18</td>
+            <td className="td-main">April 26,2018 15:17</td>
+            <td className="td-main">Active</td>
+            <td className="td-main"><b>...</b></td>
             </tr>
             <tr className="card-table">
-            <td className="td">10</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td">item</td>
-            <td className="td"><b>...</b></td>
+            <td className="td-main">iswtester@yahoo.com</td>
+            <td className="td-main">Super Admin</td>
+            <td className="td-main">April 26,2018 15:18</td>
+            <td className="td-main">April 26,2018 15:17</td>
+            <td className="td-main">Active</td>
+            <td className="td-main"><b>...</b></td>
             </tr>
         </table>
       </div>

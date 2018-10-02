@@ -9,7 +9,6 @@
     background-color: white;
 }
 .flex-big-container > div {
-    background-color: #f3f3f3;
     /* width: 49%; */
     flex-basis: 93%;
     margin: 10px;
@@ -21,26 +20,35 @@
     width: 30vmax;
     -o-object-fit: cover;
     object-fit: cover;
-    margin-top: 9vmax;
 }.header-nav-region{
     width: 100%;
+    border-bottom: 1.5px solid #ccc;
     font-size: 1.4vmax;
 }
-button{
+.header-bigcard-button{
     width: 6vmax;
     background: #C82B1D;
     border: none;
     border-radius: 20px;
-    height: 1.8vmax;
-    margin-left: 1vmax;
+    height: 2vmax;
+    margin-left: 2vmax;
+    outline: none;
+    font-weight: bold;
+    color: #fff;
     
 }
-.span-inner-button{
-
+.header-bigcard-button:hover{
+    background:#67140d;
 }
 .month{
     margin-left: 32%;
 }
-.pure-table{
-
+.flex-main-first{
+    display: flex;
+    flex:1 1 100%;
+}
+.flex-main-first-item1{
+    flex-basis:50%;
+    border:1px solid #ccc;
+    margin:1px;
 }
