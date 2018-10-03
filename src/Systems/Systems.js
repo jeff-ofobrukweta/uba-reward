@@ -78,7 +78,7 @@ handlereportingtoogle=()=>{
             <div className="flex-item-1">
             <div className="flex-container-left-hand-side">
                 <div className="item-left-flex">
-                <span className="dashboard"><img src={Desktop} alt="desktop" className="dashboard-img"/></span><span><Link to="/dashboard" className="Link">Dashboard</Link></span>
+                <span className="dashboard"><img src={Desktop} alt="desktop" className="dashboard-img"/></span><span><Link to="/dashboard" className="Link bold">Dashboard</Link></span>
                 </div>
                 <div className="item-left-flex">
                 <span className="dashboard"><img src={Content} alt="desktop" className="dashboard-img"/></span><span>Content Management<small><img src={Rightdropdown} alt="icon-dropdown" className="rightdowndrop-cm" onClick={this.handlemanagementtoogle}/></small></span>
