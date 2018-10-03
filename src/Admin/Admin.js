@@ -89,7 +89,7 @@ handlereportingtoogle=()=>{
                 <span className="dashboard"><img src={Userman} alt="desktop" className="dashboard-img"/></span><span>User Management<small><img src={Rightdropdown} alt="icon-dropdown"  className="rightdowndrop-cm" onClick={this.handleusermanagementtoogle}/></small></span>
                   <ul className={umArray}>
                   <li><Link to="/users" className="Link">Users</Link></li>
-                  <li>Admin Users</li>
+                  <li><Link to="/admin" className="Link">Admin Users</Link></li>
                 </ul>
                 </div>
                 <div className="item-left-flex">
