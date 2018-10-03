@@ -3,10 +3,11 @@ button{outline: 0;}
     display:flex;
     flex: 1 1 100%;
     flex-wrap: nowrap;
+    overflow:hidden;
 }
 .flex-item-1{
     flex-basis: 16%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 55px);
     background: #2F2D2E;
 }
 .flex-item-2{
@@ -36,13 +37,13 @@ button{outline: 0;}
 .flex-container-left-hand-side{
     display: flex;
     flex-direction:column;
-    margin: 10vmax .8vmax;
+    margin: 9.5vmax .8vmax;
     flex: 1 1 100%;
     flex-wrap: nowrap;
 }
 .flex-container-left-hand-side div{
     flex-basis:100%;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
     font-size: 1vmax;
     height:auto;
 }
@@ -130,8 +131,8 @@ button{outline: 0;}
 }
 .circular-icon-toogle{
     background: #2F2D2E;
-    width: 31px;
-    height: 31px;
+    width: 2vmax;
+    height: 2vmax;
     border-radius: 100%;
     position: absolute;
     top: 2%;
@@ -142,7 +143,6 @@ button{outline: 0;}
 }
 ul{
     list-style:none;
-    display: none;
 }
 #no-display{
     display: none !important;
@@ -220,8 +220,8 @@ ul{
 .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 0px;
+    grid-auto-rows: minmax(auto, auto);
   }
   .one {
     grid-column: 1 ;
@@ -268,4 +268,10 @@ ul{
     width: 17px;
     margin-top: 0px;
     margin-left: 4px;
+}.cm-display{
+    display:none;
+}
+.Link{
+    text-decoration: none;
+    color:#9a9a9a;
 }

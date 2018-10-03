@@ -9,6 +9,7 @@
     width: 343px;
     height: 467px;
     background: #ffffff;
+    transform: scale(.9);
     margin: 0 auto;
     position: absolute;
     left: 40%;

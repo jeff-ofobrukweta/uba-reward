@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import Profile from '../img/profile_pic.jpg';
 import Desktop from '../img/desktop.png';
 import Userman from '../img/userman.png';
@@ -12,36 +13,49 @@ import Table from '../Table/Table2';
 import './redemption.css';
 
 class Redemption extends Component {
-    constructor(props){
-        super(props);
-        this.state ={
-          toogleData:'true'
-        }
-      }
-      handleToogledata=()=>{
-         this.setState(prevState3 => ({
-          toogleData: !prevState3.toogleData
-      }));
-      }
-      render() {
-        const {toogleData} = this.state;
-        const datetoogleArray = [];
-        if(toogleData==true){
-          datetoogleArray.push('no-display');
-        }else
-        {
-          datetoogleArray.push('');
-        }
+  constructor(props){
+    super(props);
+    this.state ={
+      toogleData:'false',
+      cm:'false',
+      um:'false',
+      rp:'false'
     }
+  }
+  handleToogledata=()=>{
+     this.setState(prevState3 => ({
+      toogleData: !prevState3.toogleData
+  }));
+  }
+
+  handlemanagementtoogle=()=>{
+    console.log('just clicked cm');
+    this.setState(prevState3 => ({
+     cm: !prevState3.cm
+ }));
+ }
+ handleusermanagementtoogle=()=>{
+  console.log('just clicked cm');
+  this.setState(prevState3 => ({
+   um: !prevState3.um
+}));
+}
+handlereportingtoogle=()=>{
+  console.log('just clicked cm');
+  this.setState(prevState3 => ({
+   rp: !prevState3.rp
+}));
+};
   render() {
-    const {toogleData} = this.state;
+    const {toogleData,cm,um,rp} = this.state;
     const datetoogleArray = [];
-    if(toogleData==true){
-      datetoogleArray.push('no-display');
-    }else
-    {
-      datetoogleArray.push('');
-    }
+    const cmArray = [];
+    const rpArray = [];
+    const umArray = [];
+    if(cm ==false){cmArray.push('');}else{cmArray.push('cm-display');}
+    if(um ==false){umArray.push('');}else{umArray.push('cm-display');}
+    if(rp ==false){rpArray.push('');}else{rpArray.push('cm-display');}
+    if(toogleData==false){datetoogleArray.push('');}else{datetoogleArray.push('no-display');}
     return (
       <div className="Reward">
         <div className="nav-main-header">
@@ -65,44 +79,31 @@ class Redemption extends Component {
             <div className="flex-item-1">
             <div className="flex-container-left-hand-side">
                 <div className="item-left-flex">
-                <span className="dashboard"><img src={Desktop} alt="desktop" className="dashboard-img"/></span><span>Dashboard</span>
-                <ul>
-                  <li>tommy</li>
-                  <li>tommy</li>
-                  <li>tommy</li>
-                </ul>
+                <span className="dashboard"><img src={Desktop} alt="desktop" className="dashboard-img"/></span><span><Link to="/dashboard" className="Link">Dashboard</Link></span>
                 </div>
                 <div className="item-left-flex">
-                <span className="dashboard"><img src={Content} alt="desktop" className="dashboard-img"/></span><span>Content Management<small><img src={Rightdropdown} alt="icon-dropdown" className="rightdowndrop-cm"/></small></span>
-                  <ul>
-                  <li>tommy</li>
-                  <li>tommy</li>
-                  <li>tommy</li>
+                <span className="dashboard"><img src={Content} alt="desktop" className="dashboard-img"/></span><span>Content Management<small><img src={Rightdropdown} alt="icon-dropdown" className="rightdowndrop-cm" onClick={this.handlemanagementtoogle}/></small></span>
+                <ul className={cmArray}>
+                  <li><Link to="/merchant" className="Link">Merchant Partners</Link></li>
                 </ul>
                   </div>
                 <div className="item-left-flex">
-                <span className="dashboard"><img src={Userman} alt="desktop" className="dashboard-img"/></span><span>User Management<small><img src={Rightdropdown} alt="icon-dropdown" className="rightdowndrop-cm"/></small></span>
-                  <ul>
-                  <li>tommy</li>
-                  <li>tommy</li>
-                  <li>tommy</li>
+                <span className="dashboard"><img src={Userman} alt="desktop" className="dashboard-img"/></span><span>User Management<small><img src={Rightdropdown} alt="icon-dropdown"  className="rightdowndrop-cm" onClick={this.handleusermanagementtoogle}/></small></span>
+                  <ul className={umArray}>
+                  <li><Link to="/users" className="Link">Users</Link></li>
+                  <li><Link to="/admin" className="Link">Admin Users</Link></li>
                 </ul>
                 </div>
                 <div className="item-left-flex">
-                <span className="dashboard"><img src={Reporting} alt="desktop" className="dashboard-img"/></span><span>Reporting<small><img src={Rightdropdown} alt="icon-dropdown" className="rightdowndrop-cm"/></small></span>
-                  <ul>
-                  <li>tommy</li>
-                  <li>tommy</li>
-                  <li>tommy</li>
+                <span className="dashboard"><img src={Reporting} alt="desktop" className="dashboard-img"/></span><span>Reporting<small><img src={Rightdropdown} alt="icon-dropdown" className="rightdowndrop-cm" onClick={this.handlereportingtoogle}/></small></span>
+                  <ul className={rpArray}>
+                  <li><Link to="/registered" className="Link">Portal Report</Link></li>
+                  <li><Link to="/report" className="Link">Redemption Report</Link></li>
+                  <li>BI</li>
                   </ul>
                   </div>
                 <div className="item-left-flex">
-                <span className="dashboard"><img src={Systems} alt="desktop" className="dashboard-img"/></span><span>Systems settings</span>
-                  <ul>
-                    <li>tommy</li>
-                    <li>tommy</li>
-                    <li>tommy</li>
-                    </ul>
+                <span className="dashboard"><img src={Systems} alt="desktop" className="dashboard-img"/></span><span><Link to="systems" className="Link">Systems settings</Link></span>
                 </div>
             </div>
         </div>

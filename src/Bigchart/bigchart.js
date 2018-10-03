@@ -14,16 +14,8 @@ class Bigchart extends Component {
                         <small className="summary"><b>Summary</b></small>
                         <small className="month"><b>Month</b><small className="span-inner-button"><button className="header-bigcard-button">All Time</button></small></small>
                      </div>
-                     <section>
-                           <small className="head-header">
-                           <div className="flex-main-first">
-                            <div className="flex-main-first-item1">
-                                
-                            </div>
-                            <div className="flex-main-first-item1"></div>
-                          </div>
-                           </small>
-                       </section>
+                     <section style={{fontSize:'19px'}}>
+                    </section>
                         <img src={Bigimage} alt="big-card-image" className="big-card-image"/>
                      </div>
             </div>

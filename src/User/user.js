@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Profile from '../img/profile_pic.jpg';
 import Desktop from '../img/desktop.png';
 import Userman from '../img/userman.png';
@@ -9,42 +9,42 @@ import Content from '../img/content_management.png';
 import Downsmall from '../img/down.png';
 import Bell from '../img/bell.png';
 import Rightdropdown from '../img/right.png';
-import Tabletable from '../Table/Tabletable';
+import Tabletable from '../Table/usertable';
 
-class Systemscompo extends Component {
-  constructor(props){
-    super(props);
-    this.state ={
-      toogleData:'false',
-      cm:'false',
-      um:'false',
-      rp:'false'
+class Usercompo extends Component {
+    constructor(props){
+        super(props);
+        this.state ={
+          toogleData:'false',
+          cm:'false',
+          um:'false',
+          rp:'false'
+        }
+      }
+      handleToogledata=()=>{
+         this.setState(prevState3 => ({
+          toogleData: !prevState3.toogleData
+      }));
+      }
+    
+      handlemanagementtoogle=()=>{
+        console.log('just clicked cm');
+        this.setState(prevState3 => ({
+         cm: !prevState3.cm
+     }));
+     }
+     handleusermanagementtoogle=()=>{
+      console.log('just clicked cm');
+      this.setState(prevState3 => ({
+       um: !prevState3.um
+    }));
     }
-  }
-  handleToogledata=()=>{
-     this.setState(prevState3 => ({
-      toogleData: !prevState3.toogleData
-  }));
-  }
-
-  handlemanagementtoogle=()=>{
-    console.log('just clicked cm');
-    this.setState(prevState3 => ({
-     cm: !prevState3.cm
- }));
- }
- handleusermanagementtoogle=()=>{
-  console.log('just clicked cm');
-  this.setState(prevState3 => ({
-   um: !prevState3.um
-}));
-}
-handlereportingtoogle=()=>{
-  console.log('just clicked cm');
-  this.setState(prevState3 => ({
-   rp: !prevState3.rp
-}));
-};
+    handlereportingtoogle=()=>{
+      console.log('just clicked cm');
+      this.setState(prevState3 => ({
+       rp: !prevState3.rp
+    }));
+    };
   render() {
     const {toogleData,cm,um,rp} = this.state;
     const datetoogleArray = [];
@@ -109,7 +109,7 @@ handlereportingtoogle=()=>{
             <div className="flex-item-2">
               <div className="sub-navbar-main-nav">
                 <div className="sub-header-section-A">
-                  <div><b style={{fontSize:'18px'}}>System settings</b></div>
+                  <div><b style={{fontSize:'18px'}}>Users</b></div>
                   <div className="parent-circular-icon-toogle-wrapper" onClick={this.handleToogledata}>
                   <div className="drop-down-menu" id={datetoogleArray}>
                     <div className="drop-down-content">
@@ -166,4 +166,4 @@ handlereportingtoogle=()=>{
   }
 }
 
-export default Systemscompo;
+export default Usercompo;

@@ -6,6 +6,7 @@ import Redemption from './Redemption/redemption';
 import Report from './RedemptionReport/RedemptionReport';
 import Systems from './Systems/Systems';
 import Admin from './Admin/Admin';
+import Usercompo from './User/user';
 import './App.css';
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
           <Route exact path="/dashboard" component={Dashboard}/>
           <Route exact path="/registered" component={Redemption}/>
           <Route exact path="/admin" component={Admin}/>
+          <Route exact path="/users" component={Usercompo}/>
           <Route exact path="/systems" component={Systems}/>
           <Route exact path="/report" component={Report}/>
       </Switch>
