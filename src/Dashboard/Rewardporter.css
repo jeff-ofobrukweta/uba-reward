@@ -280,3 +280,6 @@ ul{
 li{
     margin-bottom: 6%;
 }
+.dashboard span{
+    font-weight: bolder;
+}
