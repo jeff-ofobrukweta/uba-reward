@@ -87,14 +87,14 @@ class Usercompo extends Component {
                 </ul>
                   </div>
                 <div className="item-left-flex">
-                <span className="dashboard"><img src={Userman} alt="desktop" className="dashboard-img"/></span><span>User Management<small><img src={Rightdropdown} alt="icon-dropdown"  className="rightdowndrop-cm" onClick={this.handleusermanagementtoogle}/></small></span>
+                <span className="dashboard"><img src={Userman} alt="desktop" className="dashboard-img"/></span><span>User Management<small><img src={Rightdropdown} alt="icon-dropdown"  className="rightdowndrop-cm-user-management" onClick={this.handleusermanagementtoogle}/></small></span>
                   <ul className={umArray}>
                   <li><Link to="/users" className="Link">Users</Link></li>
                   <li><Link to="/admin" className="Link">Admin Users</Link></li>
                 </ul>
                 </div>
                 <div className="item-left-flex">
-                <span className="dashboard"><img src={Reporting} alt="desktop" className="dashboard-img"/></span><span>Reporting<small><img src={Rightdropdown} alt="icon-dropdown" className="rightdowndrop-cm" onClick={this.handlereportingtoogle}/></small></span>
+                <span className="dashboard"><img src={Reporting} alt="desktop" className="dashboard-img"/></span><span>Reporting<small><img src={Rightdropdown} alt="icon-dropdown" className="rightdowndrop-cm-report" onClick={this.handlereportingtoogle}/></small></span>
                   <ul className={rpArray}>
                   <li><Link to="/registered" className="Link">Portal Report</Link></li>
                   <li><Link to="/report" className="Link">Redemption Report</Link></li>

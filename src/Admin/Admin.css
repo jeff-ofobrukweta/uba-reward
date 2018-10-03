@@ -13,3 +13,16 @@
     left: .6vmax;
     width: 1vmax;
 }
+.rightdowndrop-cm-user-management{
+    position: relative;
+    top: 5px;
+    left: 2.2vmax;
+    width: 1vmax;
+}
+
+.rightdowndrop-cm-report{
+    position: relative;
+    top: 5px;
+    left: 6vmax;
+    width: 1vmax;
+}
