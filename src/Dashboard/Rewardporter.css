@@ -259,6 +259,7 @@ ul{
     top: .4vmax;
     width: 1.6vmax;
     margin-right: 1vmax;
+    transform: scale(.9);
   }
   .td{
     padding: 8px;
